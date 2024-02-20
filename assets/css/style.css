@@ -677,3 +677,259 @@ button {
   font-size: 1.6rem;
   line-height: 1.75;
 }
+
+/* ============================ Feature (1) ============================  */
+.feature {
+  margin-top: 160px;
+}
+
+.feature__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature__heading {
+  margin-top: 12px;
+  width: 470px;
+}
+
+.feature__desc {
+  margin-top: 20px;
+  width: 470px;
+}
+
+.feature__list {
+  margin: 28px 0 38px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.feature-item__dot {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-purple);
+}
+
+.feature-item__content {
+  color: var(--primary-black);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.feature-media {
+  position: relative;
+  padding: 48px 88px 55px 0;
+}
+
+.feature-card {
+  position: relative;
+  padding: 38px;
+  width: 482px;
+  height: 322px;
+  border-radius: 20px;
+  background: var(--primary-purple);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.feature-card__row {
+  display: flex;
+}
+
+.feature-card__row--top {
+  justify-content: space-between;
+}
+
+.feature-card__balance--text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 1.375;
+}
+
+.feature-card__balance {
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.375;
+}
+
+.feature-card__row--bottom {
+  position: relative;
+  z-index: 1;
+  margin-top: 98px;
+  column-gap: 26px;
+  align-items: center;
+}
+
+.feature-card__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.feature-card__desc--top {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.36;
+}
+
+.feature-card__desc--top.name {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.feature-card__desc--bottom {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.36;
+}
+
+.feature-card__desc--bottom.date {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.feature-card__decor {
+  position: absolute;
+}
+
+.feature-card__decor.decor-1 {
+  top: 0;
+  left: 0;
+}
+
+.feature-card__decor.decor-2 {
+  bottom: 0;
+  right: 0;
+}
+
+.feature-transaction {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 23px 13px;
+  border-radius: 12px;
+  width: 276px;
+  height: 86px;
+  background: #fff;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-shadow: 0px 14px 38px 0px #00000012;
+}
+
+.feature-transaction__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-transaction__item--left {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+
+.feature-transaction__item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  background: #da64641a;
+}
+
+.feature-transaction__item-content-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.feature-transaction__item-source {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.feature-transaction__item-content {
+  color: var(--primary-black);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.feature-transaction__item--right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 3px;
+}
+
+.feature-transaction__item-balance {
+  color: var(--primary-black);
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+.feature-transaction__item-date {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.feature-income {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 15px;
+  border-radius: 16px;
+  width: 120px;
+  height: 120px;
+  background: #439f90;
+}
+
+.feature-income__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+}
+
+.feature-income__text,
+.feature-income__number {
+  display: block;
+  color: #fff;
+}
+
+.feature-income__text {
+  margin-top: 14px;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.feature-income__number {
+  margin-top: 6px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.39;
+}
