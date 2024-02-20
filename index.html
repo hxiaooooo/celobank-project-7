@@ -86,12 +86,22 @@
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
@@ -138,5 +148,267 @@
         </div>
       </div>
     </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <!-- Container -->
+        <div class="container">
+          <!-- Hero inner -->
+          <div class="hero__inner">
+            <!-- Hero content block -->
+            <section class="hero__content">
+              <!-- Hero sub title -->
+              <h2 class="hero__sub-title">
+                <span class="hero__sub-title--line"></span>
+                Digital Smart Wallet
+              </h2>
+
+              <!-- Hero title -->
+              <h1 class="hero__title animate__animated animate__bounce">
+                Digital
+                <span class="hero__title--highlighter">Payment</span>
+                For Everyone.
+              </h1>
+
+              <!-- Hero desc -->
+              <p class="section-desc hero__desc">
+                We bring together eveything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+
+              <!-- Hero form -->
+              <form
+                class="hero__form"
+                target="_blank"
+                role="noopener noreferrer"
+                action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                autocomplete="off"
+              >
+                <!-- Hero input -->
+                <input
+                  class="hero__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email address"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
+                />
+                <!-- Hero button -->
+                <button type="submit" class="btn hero__submit">
+                  Get Started
+                </button>
+              </form>
+
+              <p class="hero__ps">
+                *We’ll respect the inbox and never share your email.
+              </p>
+            </section>
+
+            <!-- Hero media -->
+            <div class="hero__media">
+              <!-- Hero phone -->
+              <div
+                data-aos-duration="1000"
+                data-aos="flip-right"
+                class="hero-phone"
+              >
+                <!-- Notch -->
+                <div class="hero-phone__notch"></div>
+
+                <!-- Card -->
+                <div class="hero-card">
+                  <!-- Balance (text) -->
+                  <div class="hero-card__row hero-card__row--top">
+                    <span class="hero-card__balance--text">Main Balance</span>
+                    <img src="./assets/icon/card-circle.svg" alt="" />
+                  </div>
+                  <!-- Balance (number) -->
+                  <span class="hero-card__balance">$78,355.17</span>
+
+                  <!-- Hero card row -->
+                  <div class="hero-card__row hero-card__row--bottom">
+                    <!-- Hero card column 1 -->
+                    <div class="hero-card__column">
+                      <span class="hero-card__desc--top">VALID THUR</span>
+                      <span class="hero-card__desc--bottom">08/22</span>
+                    </div>
+                    <!-- Hero card column 2 -->
+                    <div class="hero-card__column">
+                      <span class="hero-card__desc--top">CARD HOLDER</span>
+                      <span class="hero-card__desc--bottom">
+                        Md Moshqur Alam
+                      </span>
+                    </div>
+                  </div>
+
+                  <img
+                    src="./assets/icon/hero-decor-01.svg"
+                    alt=""
+                    class="hero-card__decor decor-1"
+                  />
+                  <img
+                    src="./assets/icon/hero-decor-02.svg"
+                    alt=""
+                    class="hero-card__decor decor-2"
+                  />
+                </div>
+
+                <!-- Transections rows -->
+                <div class="hero-phone__row transections">
+                  <span class="hero-phone__transections">Transections</span>
+                  <img
+                    class="hero-phone__transections-icon"
+                    src="./assets/icon/filters.svg"
+                    alt=""
+                  />
+                </div>
+
+                <!-- Hero phone list -->
+                <div class="hero-phone__list">
+                  <!-- Hero phone item 1 -->
+                  <div class="hero-phone__item">
+                    <!-- Left section -->
+                    <div class="hero-phone__item--left">
+                      <!-- Icon -->
+                      <div class="hero-phone__item-icon icon-1">
+                        <img src="./assets/icon/income.svg" alt="" />
+                      </div>
+
+                      <!-- Content -->
+                      <div class="hero-phone__item-content-block">
+                        <span class="hero-phone__item-content">
+                          Received Money
+                        </span>
+                        <span class="hero-phone__item-source">
+                          email@gmail.com
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Right section -->
+                    <div class="hero-phone__item--right">
+                      <span class="hero-phone__item-balance">+$1,600</span>
+                      <span class="hero-phone__item-date">Sep 23</span>
+                    </div>
+                  </div>
+
+                  <!-- Hero phone item 2 -->
+                  <div class="hero-phone__item">
+                    <!-- Left section -->
+                    <div class="hero-phone__item--left">
+                      <!-- Icon -->
+                      <div class="hero-phone__item-icon icon-2">
+                        <img src="./assets/icon/paper-plane.svg" alt="" />
+                      </div>
+
+                      <!-- Content -->
+                      <div class="hero-phone__item-content-block">
+                        <span class="hero-phone__item-content">
+                          Send Money
+                        </span>
+                        <span class="hero-phone__item-source">
+                          Airbnb Payment
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Right section -->
+                    <div class="hero-phone__item--right">
+                      <span class="hero-phone__item-balance"> - $600</span>
+                      <span class="hero-phone__item-date">Sep 23</span>
+                    </div>
+                  </div>
+
+                  <!-- Hero phone item 3 -->
+                  <div class="hero-phone__item">
+                    <!-- Left section -->
+                    <div class="hero-phone__item--left">
+                      <!-- Icon -->
+                      <div class="hero-phone__item-icon icon-3">
+                        <img src="./assets/icon/income--green.svg" alt="" />
+                      </div>
+
+                      <!-- Content -->
+                      <div class="hero-phone__item-content-block">
+                        <span class="hero-phone__item-content">
+                          Send Money
+                        </span>
+                        <span class="hero-phone__item-source">
+                          Upwork Earning
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Right section -->
+                    <div class="hero-phone__item--right">
+                      <span class="hero-phone__item-balance"> - $600</span>
+                      <span class="hero-phone__item-date">Sep 23</span>
+                    </div>
+                  </div>
+
+                  <!-- Hero phone item 4 -->
+                  <div class="hero-phone__item">
+                    <!-- Left section -->
+                    <div class="hero-phone__item--left">
+                      <!-- Icon -->
+                      <div class="hero-phone__item-icon icon-4">
+                        <img src="./assets/icon/wallet.svg" alt="" />
+                      </div>
+
+                      <!-- Content -->
+                      <div class="hero-phone__item-content-block">
+                        <span class="hero-phone__item-content"> Pay Bill </span>
+                        <span class="hero-phone__item-source">
+                          Electricity Bill
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Right section -->
+                    <div class="hero-phone__item--right">
+                      <span class="hero-phone__item-balance"> - $600</span>
+                      <span class="hero-phone__item-date">Sep 23</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Funds -->
+                <div class="hero-funds">
+                  <img src="./assets/icon/funds.svg" alt="" />
+                  <div class="hero-funds__content-block">
+                    <span class="hero-funds__balance">$1.310</span>
+                    <span class="hero-funds__title">SECURED FUNDS</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Deposit -->
+              <div class="hero-deposit">
+                <div class="hero-deposit__inner">
+                  <img src="./assets/icon/download.svg" alt="" />
+                  <span class="hero-deposit__title">Deposit</span>
+                  <span class="hero-deposit__balance">$32000</span>
+                </div>
+              </div>
+
+              <!-- Interest -->
+              <div class="interest">
+                <span class="interest__text">
+                  <span class="interest__text--big">0%</span> Interest
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
