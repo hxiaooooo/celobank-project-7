@@ -94,13 +94,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -160,13 +160,13 @@
             <!-- Hero content block -->
             <section class="hero__content">
               <!-- Hero sub title -->
-              <h2 class="hero__sub-title">
-                <span class="hero__sub-title--line"></span>
+              <h2 class="section-sub-title">
+                <span class="section-sub-title--line"></span>
                 Digital Smart Wallet
               </h2>
 
               <!-- Hero title -->
-              <h1 class="hero__title animate__animated animate__bounce">
+              <h1 data-aos="fade-down" class="hero__title">
                 Digital
                 <span class="hero__title--highlighter">Payment</span>
                 For Everyone.
@@ -402,6 +402,122 @@
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Guide -->
+      <section class="guide">
+        <!-- Container -->
+        <div class="container">
+          <!-- Guide inner -->
+          <div class="guide__inner">
+            <!-- Guide media -->
+            <div class="guide-media">
+              <!-- Img block -->
+              <figure class="guide__img-block">
+                <img
+                  src="./assets/img/guide-01.png"
+                  alt=""
+                  class="guide__img"
+                  data-aos="fade-right"
+                />
+              </figure>
+              <img
+                src="./assets/img/guide-background.svg"
+                alt=""
+                class="guide__img--bg"
+              />
+              <img
+                src="./assets/icon/guide-icon.svg"
+                alt=""
+                class="guide__icon"
+              />
+
+              <!-- Guide congratulations block -->
+              <div class="guide-congratulations">
+                <!-- Inner -->
+                <div class="guide-congratulations__inner">
+                  <!-- Icon block -->
+                  <div class="guide-congratulations__icon-block">
+                    <!-- Smaller block -->
+                    <div class="guide-congratulations__icon-block--smaller">
+                      <img src="./assets/icon/check-mark.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <!-- Content -->
+                  <div class="guide-congratulations__text-block">
+                    <span class="guide-congratulations__text--top"
+                      >Congratulations</span
+                    >
+                    <span class="guide-congratulations__text--bottom"
+                      >Your account activated</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Guide content -->
+            <section class="guide-content">
+              <!-- Sub title -->
+              <p class="section-sub-title">
+                <span class="section-sub-title--line"></span>
+                Digital Smart Wallet
+              </p>
+
+              <!-- Heading -->
+              <h2 data-aos="flip-left" class="section-heading guide__heading">
+                How It Works
+              </h2>
+
+              <!-- Guide list -->
+              <section class="guide__list">
+                <!-- Guide item 1 -->
+                <div data-aos="fade-up" class="guide-item">
+                  <!-- Heading -->
+                  <h3 class="guide-item__heading">
+                    1. Open a High Interest Checking account
+                  </h3>
+
+                  <!-- Desc -->
+                  <p class="guide-item__desc">
+                    Fund your bank account with a minimum balance of $100.
+                    Enroll in 3 minutes or less!
+                  </p>
+                </div>
+
+                <!-- Guide item 2 -->
+                <div data-aos="fade-up" class="guide-item">
+                  <!-- Heading -->
+                  <h3 class="guide-item__heading">
+                    2. 10 point-of-sale transactions each Month that are at
+                    least $10 each.
+                  </h3>
+
+                  <!-- Desc -->
+                  <p class="guide-item__desc">
+                    Be sure to use your rewards checking account as often as
+                    possible in order to accue APYI
+                  </p>
+                </div>
+
+                <!-- Guide item 3 -->
+                <div data-aos="fade-up" class="guide-item">
+                  <!-- Heading -->
+                  <h3 class="guide-item__heading">
+                    3. Receive up to 5.50% APY
+                  </h3>
+
+                  <!-- Desc -->
+                  <p class="guide-item__desc">
+                    The APY you earn will be based on your account balance and
+                    satisfying the transaction requirement.
+                  </p>
+                </div>
+              </section>
+            </section>
           </div>
         </div>
       </section>

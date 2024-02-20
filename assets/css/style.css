@@ -50,10 +50,33 @@ button {
   margin: 0 auto;
 }
 
+.section-heading {
+  color: var(--primary-black);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 .section-desc {
   font-size: 1.8rem;
   line-height: 1.67;
   color: var(--text-color);
+}
+
+.section-sub-title {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  font-size: 1.6rem;
+  color: #696d77;
+  line-height: 1.75;
+}
+
+.section-sub-title--line {
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background: #696d77;
 }
 
 .btn {
@@ -79,6 +102,7 @@ button {
   opacity: 0.8;
   cursor: pointer;
 }
+
 /* ============================ Header ============================  */
 .header {
   position: sticky;
@@ -172,22 +196,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.hero__sub-title {
-  display: flex;
-  align-items: center;
-  column-gap: 12px;
-  font-size: 1.6rem;
-  color: #696d77;
-  line-height: 1.75;
-}
-
-.hero__sub-title--line {
-  display: inline-block;
-  width: 18px;
-  height: 2px;
-  background: #696d77;
 }
 
 .hero__title {
@@ -535,4 +543,137 @@ button {
   display: block;
   font-size: 4.4rem;
   font-weight: 600;
+}
+
+/* ============================ Guide ============================  */
+.guide {
+  margin-top: 160px;
+}
+
+.guide__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 130px;
+}
+
+.guide-media {
+  position: relative;
+  padding: 0 93px 0 7px;
+}
+
+.guide__img-block {
+  display: flex;
+  align-items: flex-end;
+  width: 470px;
+  height: 619px;
+}
+
+.guide__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.guide__img--bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.guide__icon {
+  position: absolute;
+  top: 76px;
+  right: 162px;
+}
+
+.guide-congratulations {
+  position: absolute;
+  right: 0;
+  bottom: 96px;
+  width: 226px;
+  padding: 15px 30px 15px 15px;
+  border-radius: 8px;
+  height: 70px;
+  background: #fffdfa;
+  box-shadow: 0px 14px 34px 0px #00000012;
+}
+
+.guide-congratulations__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.guide-congratulations__icon-block,
+.guide-congratulations__icon-block--smaller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guide-congratulations__icon-block {
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  background: #4ab5e3;
+}
+
+.guide-congratulations__icon-block--smaller {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+}
+
+.guide-congratulations__text-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.guide-congratulations__text--top {
+  color: var(--primary-black);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.21;
+}
+
+.guide-congratulations__text--bottom {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.guide__heading {
+  margin-top: 12px;
+}
+
+.guide__list {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.guide-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.guide-item__heading {
+  width: 470px;
+  color: var(--primary-black);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.46;
+}
+
+.guide-item__desc {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 1.75;
 }
