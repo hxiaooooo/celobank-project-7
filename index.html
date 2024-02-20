@@ -277,6 +277,7 @@
                   <div
                     data-aos-duration="1000"
                     data-aos="fade-down"
+                    data-aos-delay="200"
                     class="hero-phone__item"
                   >
                     <!-- Left section -->
@@ -308,6 +309,7 @@
                   <div
                     data-aos-duration="1000"
                     data-aos="fade-down"
+                    data-aos-delay="200"
                     class="hero-phone__item"
                   >
                     <!-- Left section -->
@@ -339,6 +341,7 @@
                   <div
                     data-aos-duration="1000"
                     data-aos="fade-down"
+                    data-aos-delay="200"
                     class="hero-phone__item"
                   >
                     <!-- Left section -->
@@ -371,6 +374,7 @@
                     data-aos-offset="-100"
                     data-aos-duration="1000"
                     data-aos="fade-down"
+                    data-aos-delay="200"
                     class="hero-phone__item"
                   >
                     <!-- Left section -->
@@ -636,7 +640,7 @@
               <a href="#!" class="btn">Get Started</a>
             </section>
 
-            <div class="feature-media">
+            <div class="feature-media feature-1">
               <!-- Card -->
               <div
                 data-aos="flip-right"
@@ -733,10 +737,153 @@
           </div>
         </div>
       </section>
+
+      <!-- Feature (2) -->
+      <section data-aos-duration="1000" data-aos="fade-up" class="feature">
+        <!-- Container -->
+        <div class="container">
+          <!-- Inner -->
+          <div class="feature__inner">
+            <!-- Feature media block -->
+            <div class="feature-media feature-2">
+              <figure data-aos="fade-right" class="feature__img-block">
+                <img
+                  src="./assets/img/feature2-01.png"
+                  alt=""
+                  class="feature__img"
+                />
+              </figure>
+
+              <!-- BG -->
+              <img
+                class="feature__img-bg"
+                src="./assets/img/feature-background.svg"
+                alt=""
+              />
+
+              <!-- Money block -->
+              <div data-aos="zoom-in-left" class="feature__icon--money">
+                <img src="./assets/icon/feature-money.svg" alt="" />
+              </div>
+
+              <!-- Feature payment -->
+              <div data-aos="fade-up-left" class="feature-payment">
+                <!-- Inner -->
+                <div class="feature-payment__inner">
+                  <!-- Title -->
+                  <span class="feature-payment__title">
+                    Choose payment method:
+                  </span>
+
+                  <!-- Feature payment list -->
+                  <div class="feature-payment__list">
+                    <!-- Item 1 -->
+                    <div class="feature-payment__item">
+                      <img src="./assets/icon/payment-01.svg" alt="" />
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="feature-payment__item">
+                      <img src="./assets/icon/payment-02.svg" alt="" />
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="feature-payment__item">
+                      <img src="./assets/icon/payment-03.svg" alt="" />
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="feature-payment__item">
+                      <img src="./assets/icon/payment-04.svg" alt="" />
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="feature-payment__item">
+                      <img src="./assets/icon/payment-05.svg" alt="" />
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="feature-payment__item more">
+                      <img src="./assets/icon/plus.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content block -->
+            <section class="feature-content">
+              <!-- Sub title -->
+              <p class="section-sub-title">
+                <span class="section-sub-title--line"></span>
+                Digital Smart Wallet
+              </p>
+
+              <!-- Heading -->
+              <h2
+                data-aos="fade-up-left"
+                data-aos-duration="1000"
+                class="section-heading feature__heading"
+              >
+                Transfer and Deposite Your Money Anytime
+              </h2>
+
+              <!-- Desc -->
+              <p class="section-desc feature__desc">
+                We bring together eveything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+
+              <!-- Feature list -->
+              <div
+                data-aos="flip-up"
+                data-aos-duration="1000"
+                class="feature__list"
+              >
+                <!-- Feature item 1 -->
+                <div class="feature-item">
+                  <span class="feature-item__dot"></span>
+                  <span class="feature-item__content">Powerfull Apps</span>
+                </div>
+
+                <!-- Feature item 2 -->
+                <div
+                  data-aos="flip-up"
+                  data-aos-duration="1000"
+                  class="feature-item"
+                >
+                  <span class="feature-item__dot"></span>
+                  <span class="feature-item__content">
+                    Transparency And Speed
+                  </span>
+                </div>
+
+                <!-- Feature item 3 -->
+                <div
+                  data-aos="flip-up"
+                  data-aos-duration="1000"
+                  class="feature-item"
+                >
+                  <span class="feature-item__dot"></span>
+                  <span class="feature-item__content">
+                    Multiple Use Capabilities
+                  </span>
+                </div>
+              </div>
+
+              <a href="#!" class="btn">Get Started</a>
+            </section>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
   </script>
 </html>
