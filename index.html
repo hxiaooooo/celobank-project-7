@@ -126,16 +126,16 @@
           <navbar class="navbar">
             <ul class="navbar__list">
               <li class="navbar__item--active">
-                <a href="#!" class="navbar__link">Home</a>
+                <a href="/" class="navbar__link">Home</a>
               </li>
               <li>
-                <a href="#!" class="navbar__link">Products</a>
+                <a href="#products" class="navbar__link">Products</a>
               </li>
               <li>
-                <a href="#!" class="navbar__link">Features</a>
+                <a href="#feature" class="navbar__link">Features</a>
               </li>
               <li>
-                <a href="#!" class="navbar__link">Blog</a>
+                <a href="#blog" class="navbar__link">Blog</a>
               </li>
             </ul>
           </navbar>
@@ -186,6 +186,7 @@
               <!-- Hero form -->
               <form
                 class="hero__form"
+                method="POST"
                 target="_blank"
                 role="noopener noreferrer"
                 action="https://api-gateway.fullstack.edu.vn/action_page.php"
@@ -444,7 +445,12 @@
       </section>
 
       <!-- Guide -->
-      <section data-aos-duration="1000" data-aos="fade-up" class="guide">
+      <section
+        id="products"
+        data-aos-duration="1000"
+        data-aos="fade-up"
+        class="guide"
+      >
         <!-- Container -->
         <div class="container">
           <!-- Guide inner -->
@@ -575,7 +581,12 @@
       </section>
 
       <!-- Feature (1) -->
-      <section data-aos-duration="1000" data-aos="fade-up" class="feature">
+      <section
+        id="feature"
+        data-aos-duration="1000"
+        data-aos="fade-up"
+        class="feature"
+      >
         <!-- Container -->
         <div class="container">
           <!-- Inner -->
@@ -989,7 +1000,7 @@
       </section>
 
       <!-- Blog -->
-      <section data-aos="fade-up" class="blog">
+      <section id="blog" data-aos="fade-up" class="blog">
         <!-- Container -->
         <div class="container">
           <!-- Blog row -->
@@ -1387,6 +1398,156 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Container -->
+      <div class="container">
+        <!-- Footer inner -->
+        <div class="footer__inner">
+          <!-- Footer row -->
+          <div class="footer__row">
+            <!-- Footer column 1 -->
+            <div class="footer-column">
+              <a href="#!">
+                <div class="logo-block">
+                  <img src="./assets/img/logo.svg" alt="" />
+                  <img src="./assets/img/logo-brand.svg" alt="" />
+                </div>
+              </a>
+            </div>
+
+            <!-- Footer column 2 -->
+            <div class="footer-column">
+              <!-- Title -->
+              <h3 class="footer-column__title">Sitemap</h3>
+              <!-- List -->
+              <ul class="footer__list">
+                <li>
+                  <a href="#!" class="footer__link">Home</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__link">Abouts</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__link">Growers</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__link">Merchants</a>
+                </li>
+                <li>
+                  <a href="#!" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Footer column 3 -->
+            <div class="footer-column">
+              <!-- Title -->
+              <h3 class="footer-column__title">Socials</h3>
+              <!-- List -->
+              <ul class="footer__list">
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/"
+                    class="footer__link"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/"
+                    class="footer__link"
+                    >Linkedin</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.instagram.com/"
+                    class="footer__link"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.twitter.com/"
+                    class="footer__link"
+                    >Twitter</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Footer column 4 -->
+            <div class="footer-column">
+              <!-- Title -->
+              <h3 class="footer-column__title">Head Office</h3>
+
+              <!-- Address -->
+              <p class="footer__address">
+                Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22,
+                Charlottesville, CA 45565
+              </p>
+
+              <!-- Form -->
+              <form
+                class="footer__form"
+                method="POST"
+                target="_blank"
+                role="noopener noreferrer"
+                action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                autocomplete="off"
+              >
+                <!-- Label -->
+                <label for="footer-email" class="footer__label">
+                  News letter
+                </label>
+
+                <div class="footer__form-group">
+                  <!-- Input -->
+                  <input
+                    class="footer__input"
+                    type="email"
+                    name="email"
+                    id="footer-email"
+                    placeholder="Email address..."
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required
+                  />
+                  <button type="submit" class="btn footer__submit">
+                    Subscribe
+                  </button>
+                </div>
+
+                <p class="footer__error">
+                  Please type the correct form of email!
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!-- Footer row -->
+          <div class="footer__row footer__row--bottom">
+            <a class="footer__contact" href="mailto:email@gmail.com"
+              >email@gmail.com</a
+            >
+            <a class="footer__contact" href="tel:1234567890">(123) 456-7890</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        © 2020 Ligft Media All rights reserved.
+      </div>
+    </footer>
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
