@@ -1491,7 +1491,7 @@ button {
 .footer__error {
   position: absolute;
   display: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--primary-red);
   font-weight: 500;
   bottom: -34px;
