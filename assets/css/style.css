@@ -1075,6 +1075,7 @@ button {
   height: 256px;
   background: #fff;
   text-align: center;
+  cursor: pointer;
   transition: all 0.2s;
 }
 
