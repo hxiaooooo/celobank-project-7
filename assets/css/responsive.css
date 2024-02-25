@@ -875,4 +875,130 @@
     width: 15.4px;
     height: 4.2px;
   }
+
+  .blog__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .blog__title-block {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .blog__desc {
+    width: auto;
+  }
+
+  .blog-item__title {
+    width: auto;
+    font-size: 1.26rem;
+  }
+
+  .blog-item {
+    padding: 19.6px;
+    height: auto;
+  }
+
+  .blog-item__img-block {
+    width: 112px;
+    height: 112px;
+    flex-shrink: 0;
+  }
+
+  .blog-item__date {
+    font-size: 0.98rem;
+  }
+
+  .blog-item__more {
+    margin-top: 14px;
+    font-size: 1.12rem;
+  }
+
+  .install__inner {
+    padding: 50px 30px;
+  }
+
+  .install__heading {
+    font-size: 2.6rem;
+  }
+
+  .install__desc {
+    font-size: 1.4rem;
+  }
+
+  .install__sub-title {
+    font-size: 1.4rem;
+  }
+
+  .install__desc {
+    width: auto;
+  }
+
+  .install__wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+
+  .install__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 127.4px;
+    height: 44.8px;
+  }
+
+  .install__googleplay {
+    width: 84px;
+    object-fit: cover;
+  }
+
+  .install__appstore {
+    width: 78.4px;
+    object-fit: cover;
+  }
+
+  .footer__row {
+    column-gap: 30px;
+  }
+
+  .footer__address {
+    width: auto;
+  }
+
+  .footer__form-group {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+
+  .footer__input {
+    width: 100%;
+  }
+
+  .footer-column__title,
+  .footer__label {
+    font-size: 1.6rem;
+  }
+
+  .footer__input,
+  .footer__input::placeholder,
+  .footer__copyright {
+    font-size: 1.4rem;
+  }
+
+  .footer__link,
+  .footer__address {
+    font-size: 1.5rem;
+  }
+
+  .footer__contact {
+    font-size: 1.6rem;
+  }
+
+  .footer__error {
+    bottom: -50px;
+  }
 }
