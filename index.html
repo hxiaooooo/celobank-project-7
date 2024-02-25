@@ -107,15 +107,29 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <title>CeloBank - Demo Website</title>
   </head>
   <body>
-    <!-- Header -->
+    <!-- PC Header -->
     <header class="header">
       <!-- Container -->
       <div class="container">
         <!-- Header inner -->
         <div class="header__inner">
+          <!-- Table / Mobile menu -->
+          <label for="menu-checkbox" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="currentcolor"
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </label>
+
           <!-- Logo block -->
           <a href="#" class="logo-block">
             <img src="./assets/img/logo.svg" alt="" />
@@ -124,7 +138,7 @@
 
           <!-- Navbar -->
           <navbar class="navbar">
-            <ul class="navbar__list">
+            <ul id="pc-nav" class="navbar__list">
               <li class="navbar__item--active">
                 <a href="#" class="navbar__link">Home</a>
               </li>
@@ -136,6 +150,12 @@
               </li>
               <li>
                 <a href="#blog" class="navbar__link">Blog</a>
+              </li>
+              <li class="mobile-sign-in">
+                <a href="#blog" class="navbar__link show-on-mobile">Sign in</a>
+              </li>
+              <li>
+                <a href="#blog" class="navbar__link show-on-mobile">Sign up</a>
               </li>
             </ul>
           </navbar>
@@ -149,6 +169,35 @@
       </div>
     </header>
 
+    <!-- Tablet/Mobile header -->
+    <div class="mobile-header">
+      <input
+        type="checkbox"
+        name=""
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <!-- Menu overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- Menu content -->
+      <div class="menu-drawer">
+        <!-- Logo block -->
+        <a href="#" class="logo-block">
+          <img src="./assets/img/logo.svg" alt="" />
+          <img src="./assets/img/logo-brand.svg" alt="" />
+        </a>
+
+        <!-- Navigation -->
+        <ul id="mobile-nav"></ul>
+        <script>
+          const pcNav = document.querySelector("#pc-nav");
+          const mobileNav = document.querySelector("#mobile-nav");
+          mobileNav.innerHTML = pcNav.innerHTML;
+        </script>
+      </div>
+    </div>
     <!-- Main -->
     <main>
       <!-- Hero -->
@@ -445,12 +494,7 @@
       </section>
 
       <!-- Guide -->
-      <section
-        id="products"
-        data-aos-duration="1000"
-        data-aos="fade-up"
-        class="guide"
-      >
+      <section id="products" data-aos="fade-up" class="guide">
         <!-- Container -->
         <div class="container">
           <!-- Guide inner -->
@@ -581,12 +625,7 @@
       </section>
 
       <!-- Feature (1) -->
-      <section
-        id="feature"
-        data-aos-duration="1000"
-        data-aos="fade-up"
-        class="feature"
-      >
+      <section id="feature" data-aos="fade-up" class="feature">
         <!-- Container -->
         <div class="container">
           <!-- Inner -->
@@ -750,7 +789,7 @@
       </section>
 
       <!-- Feature (2) -->
-      <section data-aos-duration="1000" data-aos="fade-up" class="feature">
+      <section data-aos="fade-up" class="feature feature-2">
         <!-- Container -->
         <div class="container">
           <!-- Inner -->
@@ -890,7 +929,7 @@
       </section>
 
       <!-- Feedback -->
-      <section data-aos-duration="1000" data-aos="fade-up" class="feedback">
+      <section data-aos="fade-up" class="feedback">
         <div class="container">
           <!-- Feedback top -->
           <section class="feedback__top">
@@ -1000,7 +1039,7 @@
       </section>
 
       <!-- Blog -->
-      <section id="blog" data-aos="fade-up" class="blog">
+      <section style="display: none" id="blog" data-aos="fade-up" class="blog">
         <!-- Container -->
         <div class="container">
           <!-- Blog row -->
@@ -1053,7 +1092,7 @@
                   <!-- Date -->
                   <span class="blog-item__date">July 03, 2022</span>
                   <!-- Title -->
-                  <h3 class="blog-item__title">
+                  <h3 class="blog-item__title line-clamp line-2 break-all">
                     <a href="#!">
                       Online bank is the best and secure way to save in the
                       future...
@@ -1090,7 +1129,7 @@
                   <!-- Date -->
                   <span class="blog-item__date">July 03, 2022</span>
                   <!-- Title -->
-                  <h3 class="blog-item__title">
+                  <h3 class="blog-item__title line-clamp line-2 break-all">
                     <a href="#!">
                       Why do you need to open a bank account in online..
                     </a>
@@ -1126,7 +1165,7 @@
                   <!-- Date -->
                   <span class="blog-item__date">July 03, 2022</span>
                   <!-- Title -->
-                  <h3 class="blog-item__title">
+                  <h3 class="blog-item__title line-clamp line-2 break-all">
                     <a href="#!">
                       The benefits that we get from credit card at anytime...
                     </a>
@@ -1162,7 +1201,7 @@
                   <!-- Date -->
                   <span class="blog-item__date">July 03, 2022</span>
                   <!-- Title -->
-                  <h3 class="blog-item__title">
+                  <h3 class="blog-item__title line-clamp line-2 break-all">
                     <a href="#!">
                       How to manage your money in online in this busy days...
                     </a>
@@ -1178,7 +1217,7 @@
       </section>
 
       <!-- Install -->
-      <section data-aos="fade-up" class="install">
+      <section style="display: none" data-aos="fade-up" class="install">
         <!-- Container -->
         <div class="container">
           <!-- Inner -->
@@ -1400,7 +1439,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer style="display: none" class="footer">
       <!-- Container -->
       <div class="container">
         <!-- Footer inner -->

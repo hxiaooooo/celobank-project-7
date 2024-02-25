@@ -103,6 +103,33 @@ button {
   cursor: pointer;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+  --line-clamp: 3;
+}
+
+.line-clamp.line-4 {
+  --line-clamp: 4;
+}
+
+.line-clamp.line-5 {
+  --line-clamp: 5;
+}
+
+.line-clamp.line-6 {
+  --line-clamp: 6;
+}
+
 /* ============================ Header ============================  */
 .header {
   position: sticky;
@@ -115,13 +142,16 @@ button {
 .header__inner {
   display: flex;
   align-items: center;
-  column-gap: 62.32px;
 }
 
 .logo-block {
   display: flex;
   align-items: center;
   column-gap: 7px;
+}
+
+.header__inner .logo-block {
+  margin-right: 62.32px;
 }
 
 .navbar__list {
